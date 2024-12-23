@@ -1,0 +1,279 @@
+/* Estilos Globales */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Contenedor principal */
+.container {
+  width: 80%;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #fbfbf2;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos del Header */
+header {
+  padding: 130px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4a4a; /* Gris oscuro */
+  color: #f1f1f1; /* Gris claro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: slideInLeft 1s ease-out;
+}
+
+h4 {
+  margin: 0;
+  color: #e5e6e4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+/* Tarjeta de presentación */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #fbfbf2;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1.2s ease-out;
+}
+
+.card .img-avatar {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  filter: contrast(120%);
+}
+
+.card .info h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card .info h2 {
+  font-size: 24px;
+  color: #888; /* Gris medio */
+}
+
+.card .contact-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.card .contact-buttons button,
+.card .contact-buttons a {
+  background-color: #6b6b6b; /* Gris medio */
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .contact-buttons button:hover,
+.card .contact-buttons a:hover {
+  background-color: #505050; /* Gris más oscuro */
+  transform: scale(1.05);
+}
+
+/* Sección Sobre mí */
+.sobre-mi {
+  background-color: #fff;
+  padding: 50px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.sobre-mi h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sobre-mi p {
+  font-size: 18px;
+  color: #555; /* Gris medio */
+  line-height: 1.8;
+}
+
+/* Sección Proyectos */
+.proyectos-conteiner {
+  padding: 50px 20px;
+  background-color: #f1f1f1; /* Gris muy claro */
+}
+
+.proyectos-conteiner h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.proyectos-conteiner h2:hover {
+  color: #666; /* Gris medio */
+}
+
+.proyecto-1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1.8s ease-out;
+}
+
+.proyecto-1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-1 h3 {
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+
+.proyecto-1 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.proyecto-1 p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.proyecto-link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.proyecto-btn {
+  background-color: #6b6b6b;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proyecto-btn:hover {
+  background-color: #505050;
+  transform: scale(1.05);
+}
+
+/* Sección Habilidades */
+.habilidades-conteiner {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.habilidades-conteiner h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.habilidades-conteiner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.habilidades-conteiner li {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.habilidades-conteiner li:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
+/* Estilos de contacto */
+.contacto {
+  margin: 40px 0;
+}
+
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px;
+  color: #847577;
+  border-radius: 8px;
+}
