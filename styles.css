@@ -1,9 +1,12 @@
-div {{
-  height: 250px;
-  background-color: purple;
-  color: white;
-  font-size: 500px;
-  margin: 20px;
+/*    Barra de navegacion  */
 
+.navbar {
+  padding: 2rem;
+  background-color: #585d62;
+  color:aliceblue;
+  }
 
+.nadvar-collapse {
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,224 +1,55 @@
 
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Portfolio de Maria Cecilia Orlando</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> -->
+  <html lang="es">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" /> <!-- para que se muestren los caracteres especiales y acentos -->
+        <metra name="author" content="Maria Cecilia Orlando" />
+        <meta name="description" content="Portfolio de Maria Cecilia Orlando" />
+        <meta name="keywords" content="Desarrollo Web, Full Stack, Ruby, Ruby on Rails, JavaScript, HTML, CSS, Bootstrap, Hotwaire, React, Angular, PostgreSQL" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- para que se adapte a cualquier dispositivo -->
+        <!-- titulo -->
+        <title>Portfolio de Maria Cecilia Orlando</title>
+        <!-- favicon -->
+        <link rel="icon" type ="image/png" href="./Assets/imagenes/iconom.png"/>
+        <!-- <---bootstrap--->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- css -->
+        <link href="styles.css" rel="stylesheet" />
 
+    </head>
 
+  <body>
+      <!-- Barra de navegación  -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#" >
+              <img src="./Assets/imagenes/iconom.png" alt="icono" width="80" alt="Logo de la página web" />
+            </a>
 
-    <!-- <---bootstrap--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" rel="stylesheet" />
-
-</head>
-
-<body>
-    <div class="container">
-      <header>
-        <div class="navbar">
-                  <ul id="links-menu">
-                    <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                  </ul>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">SOBRE MÍ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HABILIDADES</a>
+              </li>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <div class="card">
-            <img class="img-avatar" alt="avatar" src="./Assets/imagenes/FOTO.png"/>
-              <div class="info">
-                  <h1><strong> MARÍA CECILIA ORLANDO </strong></h1>
-                  <h2>Full Stack Web Developer</h2>
-                  <div class="contact-buttons">
-                    <button onclick="window.open('CV - Orlando María Cecilia.pdf', '_blank')">Descargar CV</button>
-                      <a href="https://github.com/CeciliaOrlando" target="_blank"><i class="fab fa-github" "></i></a>
-                      <a href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263/" target="_blank"><i class="fa-brands fa-linkedin-in" ></i></a>
-                  </div>
-              </div>
-        </div>
-      </header>
-
-      <br></br>
-
-      <section id="sobre-mi" class="sobre-mi">
-        <h1><strong> <u> SOBRE MÍ </u></strong></h1>
-          <div class="parrafo">
-              <p>
-                <p><strong>Soy una profesional con más de 12 años de experiencia en el sector legal, con habilidades en análisis, resolución de problemas y comunicación. Actualmente, he redirigido mi carrera al desarrollo web y marketing digital, fusionando mi experiencia analítica con mi pasión por la tecnología.</strong></p>
-
-                <p>Me especializo en <strong>Desarrollo Web Full Stack</strong>, donde aplico mis conocimientos para crear soluciones digitales que generen valor real.</p>
-
-                <h3><strong> <u>Habilidades: </u></strong></h3>
-                <ul>
-                    <li><strong>Desarrollo Full Stack</strong>: Ruby, Ruby on Rails, JavaScript, HTML, CSS, Bootstrap, Hotwaire, React, Angular, PostgreSQL.</li>
-                </ul>
-
-                <p>Mi enfoque es resolver problemas complejos y desarrollar soluciones innovadoras que optimicen procesos y mejoren la experiencia del usuario. Estoy abierta a nuevas oportunidades donde pueda integrar mis habilidades en tecnología y marketing digital para impulsar proyectos innovadores.</p>
-              </p>
-          </div>
-      </section>
-
-      <br></br>
-
-      <section id="proyectos" class="proyectos-conteiner">
-        <h2><u>PROYECTOS DESTACADOS </u></h2>
-        <div class="proyectoss">
-            <!-- Proyecto 1 -->
-            <div class="proyecto-1">
-              <h3> <u> SKILL SWAP </u></h3>
-                <img src="./Assets/imagenes/home skillswap.png" alt="skillswap" />
-                  <p>Skill Swap es una innovadora plataforma diseñada para empoderar a mujeres latinoamericanas mediante el intercambio de habilidades. Ofrece una solución única para conectar a mujeres con diferentes habilidades y conocimientos, facilitando un entorno de colaboración y crecimiento mutuo. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: HTML, CSS, Bootstrap, JavaScript, React.Base de datos: Active Record</p>
-
-                <div class="proyecto-link">
-                  <a class="proyecto-btn" href="https://github.com/CeciliaOrlando/skillswap">GitHub</a>
-
-                  <div class="proyecto-video">
-                    <iframe src="https://player.vimeo.com/video/1026493661?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Skillswap"></iframe>
-                  </div>
-                </div>
-            </div>
-
-            <div class="proyecto-1">
-              <h3> <u> POKEDEX </u> </h3>
-                <img src="./Assets/imagenes/pokedex.png" alt="Pokedex" />
-                  <p>En este proyecto, desarrollé una aplicación web interactiva dedicada a la visualización y gestión de tarjetas de Pokémon, utilizando la PokeAPI para obtener datos en tiempo real. La aplicación permite a los usuarios explorar diferentes Pokémon, ver detalles de sus cartas y aprender más sobre sus características.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, Template Tag.</p>
-
-                  <div class="proyecto-link">
-                      <a  class="proyecto-btn" href="https://github.com/CeciliaOrlando/pokedex" >GitHub</a>
-                      <a  class="proyecto-btn" href=" https://ceciliaorlando.github.io/pokedex/">Ver Página</a>
-                  </div>
-            </div>
-
-          <div class="proyecto-1">
-            <h3> <u> AGENDA 2024 </u></h3>
-              <img src="./Assets/imagenes/homeagenda2024.png" alt="agenda" />
-                <p>Este proyecto es una aplicación de gestión de contactos, desarrollada en Ruby on Rails. Permite a los usuarios agendar contactos de manera eficiente, creando, editando y eliminando entradas. La aplicación cuenta con una barra de búsqueda que facilita encontrar contactos por nombre, apellido o correo electrónico. <u>Tecnologías Utilizadas:</u>                 Backend: Ruby on Rails, Frontend: Bootstrap, Active Storage, Geocoding. </p>
-
-                <div class="proyecto-link">
-                  <a  class="proyecto-btn" href="https://github.com/CeciliaOrlando/agenda_2024" >GitHub</a>
-                  <div class="proyecto-video">
-                    <iframe src="https://player.vimeo.com/video/1026522147?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Agenda2024"></iframe>
-                  </div>
-                </div>
-          </div>
-
-          <div class="proyecto-1">
-            <h3> <u> ECO HOUSE-Voluntariado </u></h3>
-              <img src="./Assets/imagenes/ecohouse.png" alt="ecohuse" />
-                  <p>Este proyecto de voluntariado con Eco House Global se centra en la actualización de su aplicación web, con el objetivo de mejorar su funcionalidad y la experiencia del usuario. Eco House Global es una ONG sin fines de lucro dedicada a la sostenibilidad, que se especializa en educación, comunicación, consultoría, restauración ecológica y voluntariado. En este rol, estoy a cargo del diseño y desarrollo de la nueva interfaz de usuario (UI), lo que me permitirá aplicar y expandir mis habilidades en diseño de interfaces y desarrollo web, al mismo tiempo que contribuyo a una causa que me apasiona. <u>En que colaboro:</u>  Diseñar la nueva interfaz de usuario (UI). Implementar nuevas funcionalidades. Mejorar la experiencia del usuario (UX).</p>
-
-            <div class="proyecto-link">
-              <a  class="proyecto-btn" href="https://www.figma.com/design/dEFhFhyuMgd0GC0tYnr447/Untitled?node-id=0-1&node-type=canvas&t=n88fcBmb0mrRCiSF-0" >Ver Proyecto</a>
-              <a  class="proyecto-btn" href="https://www.figma.com/proto/dEFhFhyuMgd0GC0tYnr447/Untitled?node-id=2-2&node-type=frame&t=WlwnPwYQz6F6eD8o-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2" >Ver Proyecto (Mobile)</a>
-            </div>
-          </div>
-       </div>
-      </section>
-
-      <br></br>
-
-      <section id="habilidades" class="habilidades-conteiner">
-          <h2> <u> HABILIDADES </u></h2>
-
-              <div class="fullstack">
-                <div class="languages">
-                  <img src="./Assets/imagenes/angularjs.jpg" alt="AngularJS" />
-                  <p>AngularJS</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/bootstrap.png" alt="Bootstrap" />
-                  <p>Bootstrap</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/css.png" alt="CSS" />
-                  <p>CSS</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/heroku.png" alt="Heroku" />
-                  <p>Heroku</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/hotwaire.jpg" alt="Hotwaire" />
-                  <p>Hotwaire</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/html5.png" alt="HTML5" />
-                  <p>HTML5</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/javascript.png" alt="JavaScript" />
-                  <p>JavaScript</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/jquery.png" alt="jQuery" />
-                  <p>jQuery</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/mongodb.png" alt="MongoDB" />
-                  <p>MongoDB</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/nestjs.png" alt="NestJS" />
-                  <p>NestJS</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/nextjs.png" alt="Next.js" />
-                  <p>Next.js</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/nodejs.png" alt="Node.js" />
-                  <p>Node.js</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/postgreSQL.png" alt="PostgreSQL" />
-                  <p>PostgreSQL</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/react.png" alt="React" />
-                  <p>React</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/ruby.png" alt="Ruby" />
-                  <p>Ruby</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/rubyonrails.png" alt="Ruby on Rails" />
-                  <p>Ruby on Rails</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/vercel.png" alt="Vercel" />
-                  <p>Vercel</p>
-                </div>
-                <div class="languages">
-                  <img src="./Assets/imagenes/vite.png" alt="Vite" />
-                  <p>Vite</p>
-                </div>
-              </div>
-            </section>
-
-
-
-      <br></br>
-
-      <section id="contacto" class="contacto">
-        <h2><u>CONTACTO </u></h2>
-          <div class="redes">
-            <p> <i class="fab fa-whatsapp"  ></i> <strong >+54 9 261 6105828</strong></p>
-            <p> <i class="far fa-envelope"></i> <strong " >mariaceciliaorlando2021@gmail.com</strong> </p>
-            <p> <a href="https://github.com/CeciliaOrlando" target="_blank"><i class="fa-brands fa-github" ></i> <strong >CeciliaOrlando</strong></a> </p>
-            <p> <a href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> <strong >Maria Cecilia Orlando</strong></a> </p>
-          </div>
-
-      </section>
-    </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-  </body>
-</html>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>
