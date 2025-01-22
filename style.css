@@ -17,6 +17,15 @@
   text-align: center;
 }
 
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-perfil{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
 
 
 /*    Logo- Adaptable responsivo  */
