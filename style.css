@@ -6,8 +6,22 @@
 }
 
 .navbar-collapse {
+  text-align: center ;
   align-items: center;
   justify-content: space-between;
+}
+
+/*  Google Fonts   */
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h1 {
+  font-size: 1.5rem;
+  color: #615151;
+
 }
 
 /*  Seccion Hero  */
@@ -22,15 +36,26 @@
 }
 
 .hero-imagen-perfil{
-  width: 100px;
-  height: 100px;
-  margin: 20px;
+  width: 300px;
+  height: 350px;
+  margin: 20px auto;
 }
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+
 
 
 /*    Logo- Adaptable responsivo  */
 
-@media screen and (max-witdh: 767px) {
+@media screen and (max-width: 767px) {
     .navbar-brand {
       display: none;
     }
