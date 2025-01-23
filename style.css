@@ -76,7 +76,7 @@
 
 /*  Seccion Sobre Mi   */
 .sobre-mi {
-  height: 500px;
+  height: 600px;
   padding: 10px;
 }
 
@@ -94,7 +94,21 @@
 .experiencia .row div {
   height: 250px;
   background-color: purple;
-  border: solid 3px orange;
+  border: 3px solid orange;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.experiencia i{
+  font-size: 2.5rem;
+  color: #f5f6f7;
+  background-color: #1b1d1f;
+  padding: 8px 19px;
+  border-radius: 50%;
 }
 
 /*    Logo- Adaptable responsivo  */
