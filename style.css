@@ -18,11 +18,35 @@
   font-style: normal;
 }
 
+/*  Estilos generales   */
+
 .h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #615151;
 
 }
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1d1f;
+}
+
+.seccion-clara {
+  color: #1b1d1f;
+  background-color: #f5f6f7;
+}
+
+.seccion-titulo {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
 
 /*  Seccion Hero  */
 .hero {
@@ -46,12 +70,32 @@
 }
 
 .hero-principal h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #615151;
 }
 
+/*  Seccion Sobre Mi   */
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
 
+.sobre-mi .contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+/*  Seccion Experiencia  */
+.experiencia {
+  padding: 40px;
+}
+
+.experiencia .row div {
+  height: 250px;
+  background-color: purple;
+  border: solid 3px orange;
+}
 
 /*    Logo- Adaptable responsivo  */
 
