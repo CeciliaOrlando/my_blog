@@ -60,6 +60,11 @@
   color: white;
 }
 
+.btn-secondary {
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
 
 /*  Seccion Hero  */
 .hero {
@@ -181,6 +186,17 @@
   margin-bottom: 0;
 }
 
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+}
+
+
 .proyecto:hover img {
   opacity: 0.2;
 }
@@ -191,10 +207,25 @@
 
 .proyecto {
   position: relative;
-  
+
+}
+/*  Seccion habilidades  */
+.proyecto-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
+
 /*    Logo- Adaptable responsivo  */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i{
+    font-size: 40px;
+  }
+}
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
