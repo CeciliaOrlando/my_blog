@@ -207,14 +207,120 @@
 
 .proyecto {
   position: relative;
-
 }
 /*  Seccion habilidades  */
-.proyecto-contenedor {
-  padding-top: 60px;
-  margin-bottom: 40px;
+
+.habilidades {
+  padding: 50px 0;
 }
 
+.habilidades-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.habilidades img {
+  height: 70%;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.3s ease;
+  object-fit: contain
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Efecto hover */
+.habilidades img {
+  transform: scale(1.1);
+}
+
+/*  Seccion Contacto  */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.contacto .rectangulo{
+  background-color: darkgrey;
+  margin-top: -5rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  padding: 20px;
+  color:#f5f6f7;
+  font-size: 1.2rem;
+}
+
+/*  Footer  */
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+
+}
+
+.footer-texto {
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: cursive;
+}
+
+.icono-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.icono-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.icono-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid darkgrey;
+}
+
+.footer-texto-pie {
+  font-size: 0.8rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  color:antiquewhite;
+ }
 
 /*    Logo- Adaptable responsivo  */
 
@@ -232,3 +338,22 @@
       display: none;
     }
   }
+
+
+@media (max-width: 767px) {
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-3 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    max-width: 25%;
+  }
+}
