@@ -17,6 +17,7 @@
   background-color: #f5f6f7;
 }
 
+
 .seccion-titulo {
   text-align: center;
   padding: 15px 0;
@@ -30,7 +31,8 @@
 
 .seccion-descripcion {
   font-size: 1.2rem;
-  color: #584e4e
+  color: #584e4e;
+  text-align: center;
 }
 
 .texto-negro {
@@ -103,48 +105,6 @@
 
 }
 
-.icono-contenedor {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.icono-redes-sociales a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 50%;
-  transition: all 0.2s ease-in;
-}
-
-.icono-redes-sociales i {
-  color: black;
-  font-size: 1.8rem;
-  transition: all 0.2s ease-in;
-}
-
-.icono-redes-sociales a:hover {
-  background-color: black;
-  border: 2px solid darkgrey;
-}
-
-.icono-redes-sociales a:hover i {
-  color: white;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 25px;
-}
-
-
 
 /*  Seccion Sobre Mi   */
 .sobre-mi {
@@ -160,11 +120,12 @@
 
 /*  Seccion Experiencia  */
 .experiencia {
-  padding: 40px 40px 60px 40px;
+  padding: 40px 40px 40px 40px;
+  
 }
 .experiencia .columna {
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 3px solid #8080804d;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -262,6 +223,7 @@
 .proyecto {
   position: relative;
 }
+
 /*  Seccion habilidades  */
 
 .habilidades {
@@ -287,8 +249,8 @@
   object-fit: contain
 }
 
-.descripcion {
-  font-size: 1.2rem;
+.seccion-descripcion {
+  font-size: 1.1rem;
   text-align: center;
 }
 
