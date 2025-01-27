@@ -375,6 +375,7 @@ footer {
   .hero-principal h2 {
     font-size: 1rem;
   }
+}
 
 
   @media (max-width: 768px) {
@@ -383,19 +384,20 @@ footer {
     }
 
     .sobre-mi p {
-      font-size: 1rem;   /* Reduce el tamaño de la fuente en pantallas más pequeñas */
-      padding: 0 1rem;    /* Añade algo de relleno lateral para evitar que el texto toque los bordes */
+      font-size: 1rem;
+      padding: 0 1rem;
     }
   }
 
-  /* Consulta para pantallas más pequeñas (como smartphones pequeños) */
+
   @media (max-width: 480px) {
     .sobre-mi h2 {
-      font-size: 1.5rem;  /* Ajusta aún más el tamaño de la fuente */
+      font-size: 1.5rem;
     }
 
+
     .sobre-mi p {
-      font-size: 0.9rem;  /* Reduce aún más el tamaño de la fuente */
-      padding: 0 0.5rem;  /* Reduce el relleno lateral */
+      font-size: 0.9rem;
+      padding: 0 0.5rem;
     }
   }
