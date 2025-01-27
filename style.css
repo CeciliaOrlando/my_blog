@@ -82,8 +82,9 @@
 }
 
 .hero-imagen-perfil{
-  width: 300px;
-  height: 350px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   margin: 20px auto;
 }
 
@@ -113,15 +114,17 @@
 }
 
 .sobre-mi .contenedor {
-  max-width: 600px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 20px;
 }
 
 /*  Seccion Experiencia  */
 .experiencia {
   padding: 40px 40px 40px 40px;
-  
+
 }
 .experiencia .columna {
   padding: 20px;
@@ -350,5 +353,49 @@ footer {
 @media screen and (max-width: 767px) {
     .navbar-brand {
       display: none;
+    }
+  }
+
+
+
+@media (max-width: 768px) {
+  .hero-principal {
+    padding: 1rem;
+  }
+
+  .hero-imagen-perfil {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-principal h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-principal h2 {
+    font-size: 1rem;
+  }
+
+
+  @media (max-width: 768px) {
+    .sobre-mi h2 {
+      font-size: 1.8rem;
+    }
+
+    .sobre-mi p {
+      font-size: 1rem;   /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+      padding: 0 1rem;    /* Añade algo de relleno lateral para evitar que el texto toque los bordes */
+    }
+  }
+
+  /* Consulta para pantallas más pequeñas (como smartphones pequeños) */
+  @media (max-width: 480px) {
+    .sobre-mi h2 {
+      font-size: 1.5rem;  /* Ajusta aún más el tamaño de la fuente */
+    }
+
+    .sobre-mi p {
+      font-size: 0.9rem;  /* Reduce aún más el tamaño de la fuente */
+      padding: 0 0.5rem;  /* Reduce el relleno lateral */
     }
   }
