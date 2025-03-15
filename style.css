@@ -47,6 +47,7 @@
   font-size: 1.1rem;
   margin: 20px;
   font-weight: bold;
+  
 }
 
 /*    Barra de navegacion  */
@@ -184,9 +185,10 @@
 }
 
 .proyecto-contenedor {
-  padding-top: 60px;
+  padding-top: 100px;
   margin-bottom: 40px;
 }
+
 
 .overlay {
   transition: all 0.3s ease;
@@ -225,7 +227,7 @@
 
 .proyecto {
   position: relative;
-}
+ }
 
 /*  Seccion habilidades  */
 
