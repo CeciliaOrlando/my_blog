@@ -142,12 +142,19 @@
       <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
         <h2 class="seccion-titulo texto-negro" data-key="projects_title">MIS PROYECTOS RECIENTES </h2>
         <h3 class="seccion-descripcion text-center" data-key="projects_subtitle">Estos son algunos de mis proyectos destacados...</h3>
+        <div id="filters" class="text-center">
+          <button class="btn btn-secondary filter-btn active" data-filter="all">Todos</button>
+          <button class="btn btn-secondary filter-btn" data-filter="ruby-on-rails">Ruby on Rails</button>
+          <button class="btn btn-secondary filter-btn" data-filter="react">React</button>
+          <button class="btn btn-secondary filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="btn btn-secondary filter-btn" data-filter="web3">Web3</button>
+        </div>
         <br></br>
         <!-- Galeria de proyectos  -->
         <div class="container text-center proyectos-contenedor">
           <div class="row">
             <!-- Proyecto 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="ruby-on-rails react">
               <div class="proyecto">
                 <h5><strong>SKILL SWAP</strong></h5>
 
@@ -164,7 +171,7 @@
             </div>
 
             <!-- Proyecto 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="javascript">
                 <div class="proyecto">
                   <h5><strong>POKEDEK</strong></h5>
                   <img src="./Assets/imagenes/pokedex.png" alt="Proyecto 2">
@@ -179,7 +186,7 @@
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="ruby-on-rails">
               <div class="proyecto">
                 <h5><strong>AGENDA 2024</strong></h5>
                 <img src="./Assets/imagenes/homeagenda2024.png" alt="Proyecto 3">
@@ -195,7 +202,7 @@
             </div>
 
             <!-- Proyecto 4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="javascript">
                 <div class="proyecto">
                   <h5><strong>ECO HOUSE </strong></h5>
                   <img src="./Assets/imagenes/ecohouse.png" alt="Proyecto 4">
@@ -211,7 +218,7 @@
             </div>
                       
             <!-- Proyecto 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="javascript">
               <div class="proyecto">
                 <h5><strong>API-CRYPYO</strong></h5>
                 <img src="./Assets/imagenes/Api-Crypto.png" alt="Proyecto 5">
@@ -227,7 +234,7 @@
 
 
            <!-- Proyecto 6 -->
-           <div class="col-12 col-md-6 col-lg-4">
+           <div class="col-12 col-md-6 col-lg-4 project-card" data-category="web3">
             <div class="proyecto">
               <h5><strong>DESAFIO 0</strong></h5>
               <img src="./Assets/imagenes/Desafio0.png" alt="Proyecto "6>
@@ -242,7 +249,7 @@
         </div>
 
                       <!-- Proyecto 7 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="react">
                   <div class="proyecto">
                     <h5><strong>CONTADOR DE CLICS</strong></h5>
                     <img src="./Assets/imagenes/contador-clic.png" alt="Proyecto 7">
@@ -258,7 +265,7 @@
 
 
             <!-- Proyecto 8 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 project-card" data-category="react">
               <div class="proyecto">
                 <h5><strong>CALCULADORA INTERACTIVA</strong></h5>
                 <img src="./Assets/imagenes/calculadora1.png" alt="Proyecto 8">

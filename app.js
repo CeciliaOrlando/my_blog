@@ -114,4 +114,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial language
     const savedLang = localStorage.getItem('language') || 'es';
     setLanguage(savedLang);
+
+    // Project filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+
+            // Active button state
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Filter projects
+            projects.forEach(project => {
+                const categories = project.dataset.category.split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        });
+    });
 });

@@ -248,6 +248,16 @@
   position: relative;
  }
 
+ #filters .filter-btn.active {
+    background-color: #1b1d1f;
+    color: #f5f6f7;
+}
+
+.project-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
 /*  Seccion habilidades  */
 
 .habilidades {
