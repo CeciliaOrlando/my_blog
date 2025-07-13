@@ -1,6 +1,25 @@
 
 /*  Estilos generales   */
 
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background-color: #f5f6f7;
+    color: #1b1d1f;
+    border: 1px solid #1b1d1f;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn.active {
+    background-color: #1b1d1f;
+    color: #f5f6f7;
+}
+
 .h1 {
   font-size: 3rem;
   color: #615151;

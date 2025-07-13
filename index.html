@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- Css -->
         <link href="style.css" rel="stylesheet" />
+        <script src="app.js" defer></script>
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,19 +39,23 @@
               </a>
               <ul class="navbar-nav d-flex justify-content-center align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#sobre-mi">SOBRE MÍ</a>
+                  <a class="nav-link active" aria-current="page" href="#sobre-mi" data-key="nav_about">SOBRE MÍ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#proyectos">PROYECTOS</a>
+                  <a class="nav-link active" href="#proyectos" data-key="nav_projects">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#habilidades">HABILIDADES</a>
+                  <a class="nav-link active" href="#habilidades" data-key="nav_skills">HABILIDADES</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#contacto">CONTACTO</a>
+                  <a class="nav-link active" href="#contacto" data-key="nav_contact">CONTACTO</a>
                 </li>
               </ul>
+              <div id="language-selector" class="language-selector">
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+              </div>
             </div>
           </div>
         </nav>
@@ -60,8 +65,8 @@
           <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
             <img class="hero-imagen-perfil rounded-circle img-fluid" src="./Assets/imagenes/FOTO.png" alt="Foto de perfil"/>
           <div class="hero-inferior d-flex justify-content-center align-items-center">
-            <h1 class="text-center rubik-dirt-regular">HOLA, soy María Cecilia Orlando</h1>
-            <h2 class="text-center">Soy desarrolladora Full Stack, autodidacta por naturaleza, con una fuerte inclinación a crear soluciones innovadoras y eficientes.<br> Siempre buscando nuevos conocimientos para resolver problemas de manera creativa y efectiva.</h2>
+            <h1 class="text-center rubik-dirt-regular" data-key="hero_title">HOLA, soy María Cecilia Orlando</h1>
+            <h2 class="text-center" data-key="hero_subtitle">Soy desarrolladora Full Stack, autodidacta por naturaleza, con una fuerte inclinación a crear soluciones innovadoras y eficientes.<br> Siempre buscando nuevos conocimientos para resolver problemas de manera creativa y efectiva.</h2>
           </div>
           <div class="icono-redes-sociales seccion-oscura d-flex flex-wrap align-items-center justify-content-center">
             <a href="CV - María Cecilia Orlando.pdf"  target="_blank"> <i class="bi bi-file-person"></i> </a>
@@ -77,8 +82,8 @@
       <!-- Sobre mí -->
       <section id="sobre-mi" class="sobre-mi seccion-oscura d-flex align-items-center justify-content-center">
         <div class="contenedor">
-          <h2 class="seccion-titulo">CONOCIENDO a María Cecilia Orlando </h2>
-          <p class="seccion-texto">Soy una profesional con más de 12 años de experiencia en el sector legal, donde desarrollé habilidades clave en análisis, resolución de problemas y comunicación efectiva. Sin embargo, mi verdadera pasión por la tecnología me ha llevado a redirigir mi carrera hacia el desarrollo web y marketing digital, fusionando mi sólida experiencia analítica con un enfoque innovador en las tecnologías de vanguardia, como Web 3.0, blockchain y criptomonedas. <br></br>  Soy una persona incansable y autodidacta, siempre buscando aprender y adaptarme a las últimas tendencias tecnológicas. Mi objetivo es resolver problemas complejos mediante soluciones innovadoras que optimicen procesos, mejoren la experiencia del usuario y aportar valor en la creación de productos que marquen una diferencia real en el mundo digital. </p>
+          <h2 class="seccion-titulo" data-key="about_title">CONOCIENDO a María Cecilia Orlando </h2>
+          <p class="seccion-texto" data-key="about_text">Soy una profesional con más de 12 años de experiencia en el sector legal, donde desarrollé habilidades clave en análisis, resolución de problemas y comunicación efectiva. Sin embargo, mi verdadera pasión por la tecnología me ha llevado a redirigir mi carrera hacia el desarrollo web y marketing digital, fusionando mi sólida experiencia analítica con un enfoque innovador en las tecnologías de vanguardia, como Web 3.0, blockchain y criptomonedas. <br></br>  Soy una persona incansable y autodidacta, siempre buscando aprender y adaptarme a las últimas tendencias tecnológicas. Mi objetivo es resolver problemas complejos mediante soluciones innovadoras que optimicen procesos, mejoren la experiencia del usuario y aportar valor en la creación de productos que marquen una diferencia real en el mundo digital. </p>
         </div>
         <br></br>
       </section>
@@ -90,8 +95,8 @@
             <!-- Desarrollo -->
             <div class="columna col-12 col-md-4">
               <i class="bi bi-laptop"></i>
-              <p class="experiencia-titulo">Desarrollo Backend</p>
-              <p>He desarrollado habilidades para crear la parte del servidor y lógica detrás de una aplicación web, además de gestionar bases de datos y APIs.</p>
+              <p class="experiencia-titulo" data-key="exp_backend_title">Desarrollo Backend</p>
+              <p data-key="exp_backend_text">He desarrollado habilidades para crear la parte del servidor y lógica detrás de una aplicación web, además de gestionar bases de datos y APIs.</p>
               <div class="badges-contenedor">
                 <span class="badge text-bg-secondary">Ruby</span>
                 <span class="badge text-bg-secondary">Ruby on Rails</span>
@@ -104,8 +109,8 @@
             <!-- Artículos-->
             <div class="columna col-12 col-md-4">
               <i class="bi bi-laptop"></i>
-              <p class="experiencia-titulo"> Desarrollo Web Frontend</p>
-              <p> Tengo habilidades en el diseño y desarrollo de interfaces de usuario, enfocándome en crear experiencias visuales atractivas y funcionales para aplicaciones web </p>
+              <p class="experiencia-titulo" data-key="exp_frontend_title"> Desarrollo Web Frontend</p>
+              <p data-key="exp_frontend_text"> Tengo habilidades en el diseño y desarrollo de interfaces de usuario, enfocándome en crear experiencias visuales atractivas y funcionales para aplicaciones web </p>
               <div class="badges-contenedor">
                 <span class="badge text-bg-secondary">HTML5</span>
                 <span class="badge text-bg-secondary">CSS3</span>
@@ -118,8 +123,8 @@
             <!-- Estudiante -->
             <div class="columna col-12 col-md-4">
               <i class="bi bi-book"></i>
-              <p class="experiencia-titulo">Tecnologías de vanguardia </p>
-              <p>Estoy muy entusiasmada, explorando y estudiando estas tecnologías emergentes con la finalidad de desarrollar soluciones innovadoras y contribuir al futuro de la web descentralizada</p>
+              <p class="experiencia-titulo" data-key="exp_emerging_title">Tecnologías de vanguardia </p>
+              <p data-key="exp_emerging_text">Estoy muy entusiasmada, explorando y estudiando estas tecnologías emergentes con la finalidad de desarrollar soluciones innovadoras y contribuir al futuro de la web descentralizada</p>
               <div class="badges-contenedor">
                 <span class="badge text-bg-secondary">Blockchain</span>
                 <span class="badge text-bg-secondary">Web 3.0</span>
@@ -135,8 +140,8 @@
 
       <!-- Proyectos -->
       <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-        <h2 class="seccion-titulo texto-negro">MIS PROYECTOS RECIENTES </h2>
-        <h3 class="seccion-descripcion text-center">Estos son algunos de mis proyectos destacados...</h3>
+        <h2 class="seccion-titulo texto-negro" data-key="projects_title">MIS PROYECTOS RECIENTES </h2>
+        <h3 class="seccion-descripcion text-center" data-key="projects_subtitle">Estos son algunos de mis proyectos destacados...</h3>
         <br></br>
         <!-- Galeria de proyectos  -->
         <div class="container text-center proyectos-contenedor">
@@ -155,7 +160,7 @@
                   </div>
                 </div>
               </div>
-              <p>Skill Swap es una innovadora plataforma diseñada para empoderar a mujeres latinoamericanas mediante el intercambio de habilidades. Ofrece una solución única para conectar a mujeres con diferentes habilidades y conocimientos, facilitando un entorno de colaboración y crecimiento mutuo. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: HTML, CSS, Bootstrap, JavaScript, React.Base de datos: Active Record</p>
+              <p data-key="project1_desc">Skill Swap es una innovadora plataforma diseñada para empoderar a mujeres latinoamericanas mediante el intercambio de habilidades. Ofrece una solución única para conectar a mujeres con diferentes habilidades y conocimientos, facilitando un entorno de colaboración y crecimiento mutuo. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: HTML, CSS, Bootstrap, JavaScript, React.Base de datos: Active Record</p>
             </div>
 
             <!-- Proyecto 2 -->
@@ -170,7 +175,7 @@
                     </div>
                   </div>
                 </div>
-                <p>En este proyecto, desarrollé una aplicación web interactiva dedicada a la visualización y gestión de tarjetas de Pokémon, utilizando la PokeAPI para obtener datos en tiempo real. La aplicación permite a los usuarios explorar diferentes Pokémon, ver detalles de sus cartas y aprender más sobre sus características.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, Template Tag.</p>
+                <p data-key="project2_desc">En este proyecto, desarrollé una aplicación web interactiva dedicada a la visualización y gestión de tarjetas de Pokémon, utilizando la PokeAPI para obtener datos en tiempo real. La aplicación permite a los usuarios explorar diferentes Pokémon, ver detalles de sus cartas y aprender más sobre sus características.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, Template Tag.</p>
             </div>
 
             <!-- Proyecto 3 -->
@@ -186,7 +191,7 @@
                   </div>
                 </div>
               </div>
-                <p>Este proyecto es una aplicación de gestión de contactos, desarrollada en Ruby on Rails. Permite a los usuarios agendar contactos de manera eficiente, creando, editando y eliminando entradas. La aplicación cuenta con una barra de búsqueda que facilita encontrar contactos por nombre, apellido o correo electrónico. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: Bootstrap, Active Storage, Geocoding. </p>
+                <p data-key="project3_desc">Este proyecto es una aplicación de gestión de contactos, desarrollada en Ruby on Rails. Permite a los usuarios agendar contactos de manera eficiente, creando, editando y eliminando entradas. La aplicación cuenta con una barra de búsqueda que facilita encontrar contactos por nombre, apellido o correo electrónico. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: Bootstrap, Active Storage, Geocoding. </p>
             </div>
 
             <!-- Proyecto 4 -->
@@ -202,7 +207,7 @@
                     </div>
                   </div>
                 </div>
-                   <p>Este proyecto de voluntariado con Eco House Global se centra en la actualización de su aplicación web, con el objetivo de mejorar su funcionalidad y la experiencia del usuario. En este rol, estoy a cargo del diseño y desarrollo de la nueva interfaz de usuario (UI), lo que me permitirá aplicar y expandir mis habilidades en diseño de interfaces y desarrollo web, al mismo tiempo que contribuyo a una causa que me apasiona. <u>En que colaboro:</u>  Diseñar la nueva interfaz de usuario (UI). Implementar nuevas funcionalidades. Mejorar la experiencia del usuario (UX).</p>
+                   <p data-key="project4_desc">Este proyecto de voluntariado con Eco House Global se centra en la actualización de su aplicación web, con el objetivo de mejorar su funcionalidad y la experiencia del usuario. En este rol, estoy a cargo del diseño y desarrollo de la nueva interfaz de usuario (UI), lo que me permitirá aplicar y expandir mis habilidades en diseño de interfaces y desarrollo web, al mismo tiempo que contribuyo a una causa que me apasiona. <u>En que colaboro:</u>  Diseñar la nueva interfaz de usuario (UI). Implementar nuevas funcionalidades. Mejorar la experiencia del usuario (UX).</p>
             </div>
                       
             <!-- Proyecto 5 -->
@@ -217,7 +222,7 @@
                   </div>
                 </div>
               </div>
-              <p>En este proyecto desarrollé una aplicación web interactiva que permite buscar y visualizar información de criptomonedas en tiempo real, utilizando la API pública de CoinGecko. La aplicación permite a los usuarios ingresar el nombre o símbolo de una criptomoneda y obtener su precio actualizado en pesos argentinos, junto con su ícono e información relevante.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, CoinGecko API, Template literals.</p>
+              <p data-key="project5_desc">En este proyecto desarrollé una aplicación web interactiva que permite buscar y visualizar información de criptomonedas en tiempo real, utilizando la API pública de CoinGecko. La aplicación permite a los usuarios ingresar el nombre o símbolo de una criptomoneda y obtener su precio actualizado en pesos argentinos, junto con su ícono e información relevante.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, CoinGecko API, Template literals.</p>
           </div>
 
 
@@ -233,7 +238,7 @@
                 </div>
               </div>
             </div>
-            <p>En este proyecto completé el Desafío 0 desarrollando un contrato inteligente NFT básico utilizando Hardhat y desplegándolo en la red de prueba Sepolia. El contrato permite la creación de tokens no fungibles únicos, sentando las bases para futuros desarrollos en Web3. Este ejercicio me permitió familiarizarme con el entorno de desarrollo de Ethereum, el uso de scripts de despliegue, y la interacción con contratos a través de herramientas como Ethers.js.<u>Tecnologías Utilizadas:</u>  Solidity, Hardhat, Sepolia Testnet, Ethers.js.</p>
+            <p data-key="project6_desc">En este proyecto completé el Desafío 0 desarrollando un contrato inteligente NFT básico utilizando Hardhat y desplegándolo en la red de prueba Sepolia. El contrato permite la creación de tokens no fungibles únicos, sentando las bases para futuros desarrollos en Web3. Este ejercicio me permitió familiarizarme con el entorno de desarrollo de Ethereum, el uso de scripts de despliegue, y la interacción con contratos a través de herramientas como Ethers.js.<u>Tecnologías Utilizadas:</u>  Solidity, Hardhat, Sepolia Testnet, Ethers.js.</p>
         </div>
 
                       <!-- Proyecto 7 -->
@@ -248,7 +253,7 @@
                       </div>
                     </div>
                   </div>
-                   <p>Este proyecto es una aplicación de contador de clics, desarrollada en React. La aplicación incluye botones estilizados que responden a los clics, y el contador se actualiza en tiempo real al realizar la acción. Los botones son componentes reutilizables y se pasan funciones como propiedades (props) para mantener la lógica de actualización del contador. La interfaz está diseñada con CSS para garantizar una experiencia visual atractiva y funcional. <u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.</p>
+                   <p data-key="project7_desc">Este proyecto es una aplicación de contador de clics, desarrollada en React. La aplicación incluye botones estilizados que responden a los clics, y el contador se actualiza en tiempo real al realizar la acción. Los botones son componentes reutilizables y se pasan funciones como propiedades (props) para mantener la lógica de actualización del contador. La interfaz está diseñada con CSS para garantizar una experiencia visual atractiva y funcional. <u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.</p>
             </div>
 
 
@@ -264,7 +269,7 @@
                   </div>
                 </div>
               </div>
-              <p>Este proyecto es una aplicación de calculadora interactiva, desarrollada en React. Permite realizar operaciones matemáticas básicas, como suma, resta, multiplicación y división, tanto con números enteros como decimales. Los botones de la calculadora son componentes reutilizables que pasan funciones como propiedades (props) para manejar las operaciones y actualizar la pantalla en tiempo real.<u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.</p>
+              <p data-key="project8_desc">Este proyecto es una aplicación de calculadora interactiva, desarrollada en React. Permite realizar operaciones matemáticas básicas, como suma, resta, multiplicación y división, tanto con números enteros como decimales. Los botones de la calculadora son componentes reutilizables que pasan funciones como propiedades (props) para manejar las operaciones y actualizar la pantalla en tiempo real.<u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.</p>
             </div>
 
 
@@ -274,7 +279,7 @@
 
             <!-- Botón Ver más proyectos -->
             <div>
-                <a href="https://github.com/CeciliaOrlando" target="_blank" rel="noopener noreferrer"> <button type="button" class="btn btn-secondary"> Ver más proyectos <i class="bi bi-arrow-right-circle-fill"></i> </button> </a>
+                <a href="https://github.com/CeciliaOrlando" target="_blank" rel="noopener noreferrer"> <button type="button" class="btn btn-secondary" data-key="see_more_projects"> Ver más proyectos <i class="bi bi-arrow-right-circle-fill"></i> </button> </a>
             </div>
 
           </div>
@@ -289,8 +294,8 @@
 
   <!-- Habilidades -->
       <section id="habilidades" class="habilidades seccion-clara d-flex flex-column align-items-center">
-        <h2 class="seccion-titulo texto-negro"> HABILIDADES </h2>
-        <h3 class="seccion-descripcion text-center">Estos son algunas de mis habilidades y tecnologías que manejo, aunque me encuentro continuamente aprendiendo! </h3>
+        <h2 class="seccion-titulo texto-negro" data-key="skills_title"> HABILIDADES </h2>
+        <h3 class="seccion-descripcion text-center" data-key="skills_subtitle">Estos son algunas de mis habilidades y tecnologías que manejo, aunque me encuentro continuamente aprendiendo! </h3>
         <!-- Habilidades -->
         <div class="container text-center habilidades-contenedor">
           <div class="row">
@@ -360,10 +365,10 @@
         <div class="container">
           <div class="container text-center rectangulo d-flex justify-content-evenly">
             <div class="row">
-              <div class="col-12 col-md-4 seccion-titulo">
+              <div class="col-12 col-md-4 seccion-titulo" data-key="contact_title">
                 ¡HABLEMOS!
               </div>
-              <div class="col-12 col-md-4 descripcion">
+              <div class="col-12 col-md-4 descripcion" data-key="contact_text">
                 <strong>¡Estoy aquí para ayudarte a hacer realidad tus ideas!</strong> <br>
                 Si tienes un proyecto en mente no dudes en contactarme y juntos podemos llevar tu visión al siguiente nivel.<br>¡Vamos a hacerlo posible!
               </div>
@@ -378,7 +383,7 @@
   <!--  Seccion Footer  -->
       <footer class="seccion-oscura d-flex flex-column justify-content-center align-items-center">
         <img class="footer-logo" src="./Assets/imagenes/favicon.png" />
-        <p class="footer-texto text-center">Cada día aprendo y creo algo nuevo.<br>Juntos podemos hacer que tu visión se materialice y llevarla al siguiente nivel.</p>
+        <p class="footer-texto text-center" data-key="footer_text">Cada día aprendo y creo algo nuevo.<br>Juntos podemos hacer que tu visión se materialice y llevarla al siguiente nivel.</p>
         <div class="icono-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
           <a href="https://github.com/CeciliaOrlando" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" ></i></a>
           <a href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" ></i> </a>
@@ -386,7 +391,7 @@
           <a href="mailto:mariaceciliaorlando2021@gmail.com"> <i class="bi bi-envelope"></i></a>
         </div>
         <div>
-          <p class="footer-texto-pie text-center"> © 2024 María Cecilia Orlando. Todos los derechos reservados.</p>
+          <p class="footer-texto-pie text-center" data-key="footer_copyright"> © 2024 María Cecilia Orlando. Todos los derechos reservados.</p>
         </div>
       </footer>
 
