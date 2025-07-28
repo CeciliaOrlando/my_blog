@@ -1,17 +1,34 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const languageSelector = document.getElementById('language-selector');
 
     const translations = {
         en: {
+            // Metadata
+            page_title: "Maria Cecilia Orlando's Portfolio",
+            meta_description: "Maria Cecilia Orlando's Portfolio",
+            meta_keywords: "Web Development, Full Stack, Ruby, Ruby on Rails, JavaScript, HTML, CSS, Bootstrap, Hotwire, React, Angular, PostgreSQL",
+            logo_alt: "Website logo",
+            project1_img_alt: "Project 1",
+            project2_img_alt: "Project 2",
+            project3_img_alt: "Project 3",
+            project4_img_alt: "Project 4",
+            project5_img_alt: "Project 5",
+            project6_img_alt: "Project 6",
+            project7_img_alt: "Project 7",
+            project8_img_alt: "Project 8",
+            project9_img_alt: "Project Web3 1",
+            project10_img_alt: "Project Web3 2",
+            project11_img_alt: "Project Web3 3",
             // Nav
             nav_about: 'ABOUT ME',
             nav_projects: 'PROJECTS',
             nav_skills: 'SKILLS',
             nav_contact: 'CONTACT',
+            nav_blog: 'BLOG',
             // Hero
             hero_title: "HELLO, I'm María Cecilia Orlando",
             hero_subtitle: "I'm a Full Stack developer, self-taught by nature, with a strong inclination to create innovative and efficient solutions. Always seeking new knowledge to solve problems creatively and effectively.",
+            hero_profile_alt: "Profile picture",
             // About Me
             about_title: 'GETTING TO KNOW María Cecilia Orlando',
             about_text: "I am a professional with over 12 years of experience in the legal sector, where I developed key skills in analysis, problem-solving, and effective communication. However, my true passion for technology has led me to redirect my career towards web development and digital marketing, merging my solid analytical experience with an innovative approach to cutting-edge technologies like Web 3.0, blockchain, and cryptocurrencies. <br></br> I am a tireless and self-taught person, always looking to learn and adapt to the latest technological trends. My goal is to solve complex problems through innovative solutions that optimize processes, improve user experience, and add value in creating products that make a real difference in the digital world.",
@@ -25,18 +42,80 @@ document.addEventListener('DOMContentLoaded', () => {
             // Projects
             projects_title: 'MY RECENT PROJECTS',
             projects_subtitle: 'These are some of my featured projects...',
+            filter_all: "All",
+            filter_rails: "Ruby on Rails",
+            filter_react: "React",
+            filter_javascript: "JavaScript",
+            filter_web3: "Web3",
+            project1_title: "<strong>SKILL SWAP</strong>",
             project1_desc: "Skill Swap is an innovative platform designed to empower Latin American women through the exchange of skills. It offers a unique solution to connect women with different skills and knowledge, facilitating an environment of collaboration and mutual growth. <u>Technologies Used:</u> Backend: Ruby on Rails, Frontend: HTML, CSS, Bootstrap, JavaScript, React.Database: Active Record",
+            project2_title: "<strong>POKEDEK</strong>",
             project2_desc: "In this project, I developed an interactive web application dedicated to viewing and managing Pokémon cards, using the PokeAPI to get real-time data. The application allows users to explore different Pokémon, see details of their cards, and learn more about their characteristics.<u>Technologies Used:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, Template Tag.",
+            project3_title: "<strong>AGENDA 2024</strong>",
             project3_desc: "This project is a contact management application, developed in Ruby on Rails. It allows users to efficiently schedule contacts by creating, editing, and deleting entries. The application features a search bar that makes it easy to find contacts by name, last name, or email. <u>Technologies Used:</u> Backend: Ruby on Rails, Frontend: Bootstrap, Active Storage, Geocoding.",
+            project4_title: "<strong>ECO HOUSE</strong>",
             project4_desc: "This volunteer project with Eco House Global focuses on updating their web application, with the goal of improving its functionality and user experience. In this role, I am in charge of the design and development of the new user interface (UI), which will allow me to apply and expand my skills in interface design and web development, while contributing to a cause I am passionate about. <u>What I contribute:</u>  Designing the new user interface (UI). Implement new functionalities. Improving the user experience (UX).",
+            project5_title: "<strong>API-CRYPYO</strong>",
             project5_desc: "In this project, I developed an interactive web application that allows searching and viewing real-time cryptocurrency information, using the public CoinGecko API. The application allows users to enter the name or symbol of a cryptocurrency and get its updated price in Argentine pesos, along with its icon and relevant information.<u>Technologies Used:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, CoinGecko API, Template literals.",
+            project6_title: "<strong>DESAFIO 0</strong>",
             project6_desc: "In this project, I completed Challenge 0 by developing a basic NFT smart contract using Hardhat and deploying it on the Sepolia testnet. The contract allows the creation of unique non-fungible tokens, laying the groundwork for future Web3 developments. This exercise allowed me to become familiar with the Ethereum development environment, the use of deployment scripts, and interaction with contracts through tools like Ethers.js.<u>Technologies Used:</u>  Solidity, Hardhat, Sepolia Testnet, Ethers.js.",
+            project7_title: "<strong>CLICK COUNTER</strong>",
             project7_desc: "This project is a click counter application, developed in React. The application includes stylized buttons that respond to clicks, and the counter updates in real-time when the action is performed. The buttons are reusable components and functions are passed as props to maintain the counter's update logic. The interface is designed with CSS to ensure a visually appealing and functional experience. <u>Technologies Used:</u> React, CSS, JavaScript.",
+            project8_title: "<strong>INTERACTIVE CALCULATOR</strong>",
             project8_desc: "This project is an interactive calculator application, developed in React. It allows performing basic mathematical operations, such as addition, subtraction, multiplication, and division, with both integers and decimals. The calculator buttons are reusable components that pass functions as props to handle operations and update the screen in real-time.<u>Technologies Used:</u> React, CSS, JavaScript.",
+            project9_title: "<strong>PiggyBank</strong>",
+            project9_desc: "Audit and Vulnerability Correction in a Vault Contract.<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
+            project10_title: "<strong>Simple Vault System</strong>",
+            project10_desc: "This repository contains an Ethereum smart contract that implements a basic vault system, allowing users to securely deposit and withdraw Ether (ETH).<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
+            project11_title: "<strong>BlockchainMessenger</strong>",
+            project11_desc: "The `BlockchainMessenger` contract is a simple contract that allows storing a message on the blockchain, viewing the stored message publicly, and allowing only the person who created (deployed) the contract to update the message.<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
             see_more_projects: "See more projects",
+            // Blog
+            blog_title: "BLOG",
+            blog_subtitle: "My latest publications...",
+            blog_post_title: "<strong>CRYPTOGRAPHY FOR BEGINNERS: THE ART OF DIGITAL SECRETS IN A CONNECTED WORLD 🌐</strong>",
+            blog_post_summary: "This article provides a beginner-friendly introduction to cryptography, the science of secure communication. It explains core concepts like encryption, decryption, and the role of keys. The text details the two main types: symmetric cryptography, which uses a single shared key and is very fast, and asymmetric cryptography, which uses a public and private key pair to solve the challenge of secure key exchange.",
+            blog_read_more: "Read more",
+            // Technologies
+            tech_ruby: "Ruby",
+            tech_rails: "Ruby on Rails",
+            tech_nodejs: "Node.js",
+            tech_nextjs: "Next.js",
+            tech_mongodb: "MongoDB",
+            tech_postgresql: "PostgreSQL",
+            tech_html5: "HTML5",
+            tech_css3: "CSS3",
+            tech_javascript: "JavaScript",
+            tech_bootstrap: "Bootstrap",
+            tech_react: "React",
+            tech_tailwind: "Tailwind CSS",
+            tech_blockchain: "Blockchain",
+            tech_web3: "Web 3.0",
+            tech_solidity: "Solidity",
+            tech_ethereum: "Ethereum",
+            tech_crypto: "Crypto",
+            tech_smart_contracts: "Smart Contracts",
             // Skills
             skills_title: 'SKILLS',
             skills_subtitle: 'These are some of my skills and the technologies I handle, although I am continuously learning!',
+            skill_ruby: "Ruby",
+            skill_rails: "Ruby on Rails",
+            skill_html5: "HTML5",
+            skill_css3: "CSS3",
+            skill_javascript: "JavaScript",
+            skill_bootstrap: "Bootstrap",
+            skill_angular: "AngularJS",
+            skill_react: "React",
+            skill_nodejs: "Node.js",
+            skill_nestjs: "NestJS",
+            skill_nextjs: "Next.js",
+            skill_postgresql: "PostgreSQL",
+            skill_jquery: "jQuery",
+            skill_mongodb: "MongoDB",
+            skill_vercel: "Vercel",
+            skill_vite: "Vite",
+            skill_solidity: "Solidity",
+            skill_hardhat: "Hardhat",
             // Contact
             contact_title: "LET'S TALK!",
             contact_text: "<strong>I'm here to help you bring your ideas to life!</strong> <br> If you have a project in mind, don't hesitate to contact me, and together we can take your vision to the next level.<br>Let's make it happen!",
@@ -45,14 +124,32 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_copyright: '© 2024 María Cecilia Orlando. All rights reserved.',
         },
         es: {
+            // Metadata
+            page_title: "Portfolio de Maria Cecilia Orlando",
+            meta_description: "Portfolio de Maria Cecilia Orlando",
+            meta_keywords: "Desarrollo Web, Full Stack, Ruby, Ruby on Rails, JavaScript, HTML, CSS, Bootstrap, Hotwire, React, Angular, PostgreSQL",
+            logo_alt: "Logo de la página web",
+            project1_img_alt: "Proyecto 1",
+            project2_img_alt: "Proyecto 2",
+            project3_img_alt: "Proyecto 3",
+            project4_img_alt: "Proyecto 4",
+            project5_img_alt: "Proyecto 5",
+            project6_img_alt: "Proyecto 6",
+            project7_img_alt: "Proyecto 7",
+            project8_img_alt: "Proyecto 8",
+            project9_img_alt: "Proyecto Web3 1",
+            project10_img_alt: "Proyecto Web3 2",
+            project11_img_alt: "Proyecto Web3 3",
             // Nav
             nav_about: 'SOBRE MÍ',
             nav_projects: 'PROYECTOS',
             nav_skills: 'HABILIDADES',
             nav_contact: 'CONTACTO',
+            nav_blog: 'BLOG',
             // Hero
             hero_title: 'HOLA, soy María Cecilia Orlando',
             hero_subtitle: 'Soy desarrolladora Full Stack, autodidacta por naturaleza, con una fuerte inclinación a crear soluciones innovadoras y eficientes.<br> Siempre buscando nuevos conocimientos para resolver problemas de manera creativa y efectiva.',
+            hero_profile_alt: "Foto de perfil",
             // About me
             about_title: 'CONOCIENDO a María Cecilia Orlando',
             about_text: "Soy una profesional con más de 12 años de experiencia en el sector legal, donde desarrollé habilidades clave en análisis, resolución de problemas y comunicación efectiva. Sin embargo, mi verdadera pasión por la tecnología me ha llevado a redirigir mi carrera hacia el desarrollo web y marketing digital, fusionando mi sólida experiencia analítica con un enfoque innovador en las tecnologías de vanguardia, como Web 3.0, blockchain y criptomonedas. <br></br>  Soy una persona incansable y autodidacta, siempre buscando aprender y adaptarme a las últimas tendencias tecnológicas. Mi objetivo es resolver problemas complejos mediante soluciones innovadoras que optimicen procesos, mejoren la experiencia del usuario y aportar valor en la creación de productos que marquen una diferencia real en el mundo digital.",
@@ -66,18 +163,80 @@ document.addEventListener('DOMContentLoaded', () => {
             // Projects
             projects_title: 'MIS PROYECTOS RECIENTES',
             projects_subtitle: 'Estos son algunos de mis proyectos destacados...',
+            filter_all: "Todos",
+            filter_rails: "Ruby on Rails",
+            filter_react: "React",
+            filter_javascript: "JavaScript",
+            filter_web3: "Web3",
+            project1_title: "<strong>SKILL SWAP</strong>",
             project1_desc: "Skill Swap es una innovadora plataforma diseñada para empoderar a mujeres latinoamericanas mediante el intercambio de habilidades. Ofrece una solución única para conectar a mujeres con diferentes habilidades y conocimientos, facilitando un entorno de colaboración y crecimiento mutuo. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: HTML, CSS, Bootstrap, JavaScript, React.Base de datos: Active Record",
+            project2_title: "<strong>POKEDEK</strong>",
             project2_desc: "En este proyecto, desarrollé una aplicación web interactiva dedicada a la visualización y gestión de tarjetas de Pokémon, utilizando la PokeAPI para obtener datos en tiempo real. La aplicación permite a los usuarios explorar diferentes Pokémon, ver detalles de sus cartas y aprender más sobre sus características.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, Template Tag.",
+            project3_title: "<strong>AGENDA 2024</strong>",
             project3_desc: "Este proyecto es una aplicación de gestión de contactos, desarrollada en Ruby on Rails. Permite a los usuarios agendar contactos de manera eficiente, creando, editando y eliminando entradas. La aplicación cuenta con una barra de búsqueda que facilita encontrar contactos por nombre, apellido o correo electrónico. <u>Tecnologías Utilizadas:</u> Backend: Ruby on Rails, Frontend: Bootstrap, Active Storage, Geocoding.",
+            project4_title: "<strong>ECO HOUSE</strong>",
             project4_desc: "Este proyecto de voluntariado con Eco House Global se centra en la actualización de su aplicación web, con el objetivo de mejorar su funcionalidad y la experiencia del usuario. En este rol, estoy a cargo del diseño y desarrollo de la nueva interfaz de usuario (UI), lo que me permitirá aplicar y expandir mis habilidades en diseño de interfaces y desarrollo web, al mismo tiempo que contribuyo a una causa que me apasiona. <u>En que colaboro:</u>  Diseñar la nueva interfaz de usuario (UI). Implementar nuevas funcionalidades. Mejorar la experiencia del usuario (UX).",
+            project5_title: "<strong>API-CRYPYO</strong>",
             project5_desc: "En este proyecto desarrollé una aplicación web interactiva que permite buscar y visualizar información de criptomonedas en tiempo real, utilizando la API pública de CoinGecko. La aplicación permite a los usuarios ingresar el nombre o símbolo de una criptomoneda y obtener su precio actualizado en pesos argentinos, junto con su ícono e información relevante.<u>Tecnologías Utilizadas:</u> HTML5, CSS3, JavaScript (Vanilla), Fetch API, CoinGecko API, Template literals.",
+            project6_title: "<strong>DESAFIO 0</strong>",
             project6_desc: "En este proyecto completé el Desafío 0 desarrollando un contrato inteligente NFT básico utilizando Hardhat y desplegándolo en la red de prueba Sepolia. El contrato permite la creación de tokens no fungibles únicos, sentando las bases para futuros desarrollos en Web3. Este ejercicio me permitió familiarizarme con el entorno de desarrollo de Ethereum, el uso de scripts de despliegue, y la interacción con contratos a través de herramientas como Ethers.js.<u>Tecnologías Utilizadas:</u>  Solidity, Hardhat, Sepolia Testnet, Ethers.js.",
+            project7_title: "<strong>CONTADOR DE CLICS</strong>",
             project7_desc: "Este proyecto es una aplicación de contador de clics, desarrollada en React. La aplicación incluye botones estilizados que responden a los clics, y el contador se actualiza en tiempo real al realizar la acción. Los botones son componentes reutilizables y se pasan funciones como propiedades (props) para mantener la lógica de actualización del contador. La interfaz está diseñada con CSS para garantizar una experiencia visual atractiva y funcional. <u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.",
+            project8_title: "<strong>CALCULADORA INTERACTIVA</strong>",
             project8_desc: "Este proyecto es una aplicación de calculadora interactiva, desarrollada en React. Permite realizar operaciones matemáticas básicas, como suma, resta, multiplicación y división, tanto con números enteros como decimales. Los botones de la calculadora son componentes reutilizables que pasan funciones como propiedades (props) para manejar las operaciones y actualizar la pantalla en tiempo real.<u>Tecnologías Utilizadas:</u> React, CSS, JavaScript.",
+            project9_title: "<strong>PiggyBank</strong>",
+            project9_desc: "Audit and Vulnerability Correction in a Vault Contract.<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
+            project10_title: "<strong>Simple Vault System</strong>",
+            project10_desc: "This repository contains an Ethereum smart contract that implements a basic vault system, allowing users to securely deposit and withdraw Ether (ETH).<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
+            project11_title: "<strong>BlockchainMessenger</strong>",
+            project11_desc: "The `BlockchainMessenger` contract is a simple contract that allows storing a message on the blockchain, viewing the stored message publicly, and allowing only the person who created (deployed) the contract to update the message.<u>Technologies Used:</u> Solidity, Hardhat, Ethers.js.",
             see_more_projects: "Ver más proyectos",
+            // Blog
+            blog_title: "BLOG",
+            blog_subtitle: "Mis últimas publicaciones...",
+            blog_post_title: "<strong>CRYPTOGRAPHY FOR BEGINNERS: THE ART OF DIGITAL SECRETS IN A CONNECTED WORLD 🌐</strong>",
+            blog_post_summary: "This article provides a beginner-friendly introduction to cryptography, the science of secure communication. It explains core concepts like encryption, decryption, and the role of keys. The text details the two main types: symmetric cryptography, which uses a single shared key and is very fast, and asymmetric cryptography, which uses a public and private key pair to solve the challenge of secure key exchange.",
+            blog_read_more: "Leer más",
+            // Technologies
+            tech_ruby: "Ruby",
+            tech_rails: "Ruby on Rails",
+            tech_nodejs: "Node.js",
+            tech_nextjs: "Next.js",
+            tech_mongodb: "MongoDB",
+            tech_postgresql: "PostgreSQL",
+            tech_html5: "HTML5",
+            tech_css3: "CSS3",
+            tech_javascript: "JavaScript",
+            tech_bootstrap: "Bootstrap",
+            tech_react: "React",
+            tech_tailwind: "Tailwind CSS",
+            tech_blockchain: "Blockchain",
+            tech_web3: "Web 3.0",
+            tech_solidity: "Solidity",
+            tech_ethereum: "Ethereum",
+            tech_crypto: "Crypto",
+            tech_smart_contracts: "Smart Contracts",
             // Skills
             skills_title: 'HABILIDADES',
             skills_subtitle: 'Estos son algunas de mis habilidades y tecnologías que manejo, aunque me encuentro continuamente aprendiendo!',
+            skill_ruby: "Ruby",
+            skill_rails: "Ruby on Rails",
+            skill_html5: "HTML5",
+            skill_css3: "CSS3",
+            skill_javascript: "JavaScript",
+            skill_bootstrap: "Bootstrap",
+            skill_angular: "AngularJS",
+            skill_react: "React",
+            skill_nodejs: "Node.js",
+            skill_nestjs: "NestJS",
+            skill_nextjs: "Next.js",
+            skill_postgresql: "PostgreSQL",
+            skill_jquery: "jQuery",
+            skill_mongodb: "MongoDB",
+            skill_vercel: "Vercel",
+            skill_vite: "Vite",
+            skill_solidity: "Solidity",
+            skill_hardhat: "Hardhat",
             // Contact
             contact_title: '¡HABLEMOS!',
             contact_text: '<strong>¡Estoy aquí para ayudarte a hacer realidad tus ideas!</strong> <br> Si tienes un proyecto en mente no dudes en contactarme y juntos podemos llevar tu visión al siguiente nivel.<br>¡Vamos a hacerlo posible!',
@@ -92,7 +251,13 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(elem => {
             const key = elem.getAttribute('data-key');
             if (translations[lang] && translations[lang][key]) {
-                elem.innerHTML = translations[lang][key];
+                if (elem.tagName === 'META') {
+                    elem.setAttribute('content', translations[lang][key]);
+                } else if (elem.tagName === 'IMG' && elem.hasAttribute('alt')) {
+                    elem.setAttribute('alt', translations[lang][key]);
+                } else {
+                    elem.innerHTML = translations[lang][key];
+                }
             }
         });
         localStorage.setItem('language', lang);
@@ -112,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Set initial language
-    const savedLang = localStorage.getItem('language') || 'es';
+    const savedLang = localStorage.getItem('language') || 'en';
     setLanguage(savedLang);
 
     // Project filtering
