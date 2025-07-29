@@ -51,6 +51,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="#contacto" data-key="nav_contact">CONTACTO</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#blog" data-key="nav_blog">BLOG</a>
+                </li>
               </ul>
               <div id="language-selector" class="language-selector">
                 <button class="lang-btn" data-lang="es">ES</button>
@@ -280,8 +283,8 @@
  <!-- Proyecto 9 -->
 <div class="col-12 col-md-6 col-lg-4 project-card" data-category="web3">
   <div class="proyecto">
-      <h5 data-key="project9_title"><strong>PIGGYBANK</strong></h5>
-      <img src="./Assets/imagenes/Contrato SecurePiggyBank compilado.png" alt="Proyecto Web3 DApp Example">
+      <h5><strong>PIGGYBANK</strong></h5>
+      <img src="./Assets/imagenes/Contrato SecurePiggyBank compilado.png" alt="Proyecto PiggyBank">
       <div class="overlay">
           <div class="iconos-contenedor">
               <a href="https://github.com/CeciliaOrlando/PiggyBank" target="_blank" rel="noopener noreferrer"> <i class="bi bi-github" ></i></a>
@@ -289,13 +292,13 @@
       </div>
   </div>
   <p data-key="project9_desc">Auditoría y Corrección de Vulnerabilidad en Contrato de Bóveda Este repositorio contiene un ejemplo práctico de auditoría de seguridad para un contrato inteligente de Ethereum, demostrando una vulnerabilidad común y su corrección. Incluye la versión vulnerable, la corregida y segura, y un contrato de ataque diseñado para explotar la vulnerabilidad originaL. <u>Tecnologías Utilizadas:</u> Solidity, Hardhat, Ethers.js, React.</p>
-</div>
+  </div>
 
 <!-- Proyecto 10 -->
 <div class="col-12 col-md-6 col-lg-4 project-card" data-category="web3">
   <div class="proyecto">
-      <h5 data-key="project10_title"><strong>SISTEMA DE BOVEDA SIMPLE</strong></h5>
-      <img src="./Assets/imagenes/Contrato boveda compilado.png" alt="Proyecto Task Manager JS">
+      <h5><strong>SISTEMA DE BOVEDA SIMPLE</strong></h5>
+      <img src="./Assets/imagenes/Contrato boveda compilado.png" alt="Proyecto Sistema de Bóveda Simple">
       <div class="overlay">
           <div class="iconos-contenedor">
               <a href="https://github.com/CeciliaOrlando/SistemaBovedaSimple" target="_blank" rel="noopener noreferrer"> <i class="bi bi-github" ></i></a>
@@ -308,8 +311,8 @@
   <!-- Proyecto 11 -->
 <div class="col-12 col-md-6 col-lg-4 project-card" data-category="web3">
   <div class="proyecto">
-      <h5 data-key="project11_title"><strong>BLOCKCHAIN MESSENGER</strong></h5>
-      <img src="./Assets/imagenes/contrato BlockchainMessenger deployado.png" alt="Proyecto Blog Ruby on Rails">
+      <h5><strong>BLOCKCHAIN MESSENGER</strong></h5>
+      <img src="./Assets/imagenes/contrato BlockchainMessenger deployado.png" alt="Proyecto BlockchainMessenger">
       <div class="overlay">
           <div class="iconos-contenedor">
               <a href="https://github.com/CeciliaOrlando/BlockchainMessenger" target="_blank" rel="noopener noreferrer"> <i class="bi bi-github" ></i></a>
@@ -321,7 +324,7 @@
     Ver el mensaje almacenado públicamente.
     Permitir que solo la persona que creó (implementó) el contrato pueda actualizar el mensaje.
     Contar cuántas veces se ha actualizado el mensaje.
-    Este proyecto es una introducción a los conceptos básicos de los contratos inteligentes, como variables de estado, el constructor y funciones con restricciones de acceso.. <u>Tecnologías Utilizadas:</u> Solidity, Hardhat, Ethers.js, React..</p>
+    Este proyecto es una introducción a los conceptos básicos de los contratos inteligentes, como variables de estado, el constructor y funciones con restricciones de acceso. <u>Tecnologías Utilizadas:</u> Solidity, Hardhat, Ethers.js, React..</p>
 </div>
 
 
@@ -335,7 +338,25 @@
 
         <br></br>
 
-
+  <!-- Blog -->
+  <section id="blog" class="blog-section seccion-clara d-flex flex-column align-items-center">
+    <h2 class="seccion-titulo texto-negro" data-key="blog_title">BLOG</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title" data-key="blog_article1_title">CRIPTOGRAFÍA PARA PRINCIPIANTES: EL ARTE DE LOS SECRETOS DIGITALES EN UN MUNDO CONECTADO 🌐</h3>
+              <p class="card-text" data-key="blog_article1_intro">
+                ¿Alguna vez te has preguntado cómo tu mensaje privado llega de forma segura a un amigo a través de Internet? 🤫 ¿O cómo tu banco protege tu dinero cuando realizas una transferencia online? 💰 La respuesta a estas preguntas, y a muchas otras de nuestro mundo digital, se esconde detrás de una ciencia antigua y fascinante: la criptografía. ✨
+              </p>
+              <a href="https://dev.to/maria_ceciliaorlando_ade/cryptography-for-beginners-the-art-of-digital-secrets-in-a-connected-world-17bj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-key="blog_read_more">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
       </section>
 
@@ -406,6 +427,8 @@
       </div>
       </section>
 
+
+
   <!--  Seccion Contacto  -->
       <section id="contacto" class="contacto seccion-oscura">
         <div class="container">
@@ -434,10 +457,7 @@
           <a href="https://github.com/CeciliaOrlando" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" ></i></a>
           <a href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" ></i> </a>
           <a href="https://wa.me/5492616105828?text=Hola!%20Me%20gustaría%20ponerme%20en%20contacto%20con%20vos%20y%20contarte%20sobre%20mi%20proyecto." target="_blank" rel="noopener noreferrer"> <i class="bi bi-whatsapp" ></i></a>
-          <a href="mailto:mariaceciliaorlando2021@gmail.com">
-            <i class="bi bi-envelope"></i>
-            <span>mariaceciliaorlando2021@gmail.com</span>
-          </a>
+          <a href="mailto:mariaceciliaorlando2021@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
         <div>
           <p class="footer-texto-pie text-center" data-key="footer_copyright"> © 2024 María Cecilia Orlando. Todos los derechos reservados.</p>

@@ -266,6 +266,16 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/*  Seccion Blog  */
+
+.blog-section {
+  padding: 40px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
 
 /*  Seccion habilidades  */
 
